@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Concert+One&family=Prompt:wght@300&family=Sriracha&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Carter One', sans-serif;
+    background-color: #ffb6c1;
+}
+
+.sumInfo {
+    text-align: center;
+}
+
+.counter {
+    display: flex;
+    align-items: baseline;
+    height: 80px;
+    width: 300px;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 10px;
+    outline: 10px dashed #ffb6c1;
+  box-shadow: 0 0 0 10px #000000;
+  animation: 1s BorderOne ease infinite;
+}
+
+@keyframes BorderOne {
+  to {
+    outline-color: #000000;
+    box-shadow: 0 0 0 10px #ffb6c1;
+  }
+}
+
+.counter>* {
+    height: 100%;
+    flex: 1;
+    font-size: 25px;
+}
+
+.text-center {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    font-size: 50px;
+    animation: zoomInOut 2.5s ease-in-out infinite;
+}
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.button-add {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    width: 100px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffb6c1;
+    transition: transform 0.3s ease-in-out;
+    }
+
+.button-add:hover {
+        transform: scale(1.2);
+        background-color: #ffb6c1;
+        color: #000000;
+    }
+
+.div {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 17px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 1px 5px 10px #a5a5a5;
+}
